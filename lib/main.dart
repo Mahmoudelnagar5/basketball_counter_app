@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +24,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffFFFFFF),
       appBar: AppBar(
-        title: const Text('Home '),
+        title: const Text('Basketball Counter'),
+        backgroundColor: Color(0xffDFC5F7),
       ),
       body: Column(
         children: [
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.all(8),
-                backgroundColor: Color(0xffDFC5F7),
+                backgroundColor: const Color(0xffDFC5F7),
                 minimumSize: const Size(150, 60),
               ),
               child: const Text(
